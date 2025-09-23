@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="texpasa_action_report_payment1" model="ir.actions.report">
+            <field name="name">BI Continuo Q</field>
+            <field name="model">account.payment</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">texpasa.report_account_payment1</field>
+            <field name="report_file">texpasa.report_account_payment1</field>
+            <field name="binding_model_id" ref="account.model_account_payment"/>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

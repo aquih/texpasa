@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Texpasa",
+    'summary': """ Funcionalidades extras para Texpasa """,
+    'description': """
+        Funcionalidades extras para Texpasa
+    """,
+    'author': "Aquih",
+    'website': "http://www.aquih.com",
+    'category': 'Uncategorized',
+    'version': '1.0',
+    'depends': ['account'],
+    'data': [
+        'views/report_payment1.xml',
+        'views/reports.xml',
+    ],
+    'license': 'Other OSI approved licence',
+}
