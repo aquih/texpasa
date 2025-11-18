@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="texpasa_view_account_asset_form" model="ir.ui.view">
+            <field name="name">texpasa.account.asset.form</field>
+            <field name="model">account.asset</field>
+            <field name="inherit_id" ref="account_asset.view_account_asset_form"/>
+            <field name="arch" type="xml">
+                <button name="set_to_cancelled" position="after">
+                    <button name="copiar_activo" string="Copiar Activo" type="object" invisible="state not in ('draft', 'open')"/>
+                </button>
+                <field name="asset_group_id" position="after">
+                    <field name="codigo" required="state != 'model'"/>
+                    <field name="numero_serie"/>
+                    <field name="departamento_id"/>
+                    <field name="tipo" required="state != 'model'"/>
+                    <field name="activo_padre_id"/>
+                    <field name="sinc_id" readonly="1"/>
+                </field>
+            </field>
+        </record>
+</odoo>
