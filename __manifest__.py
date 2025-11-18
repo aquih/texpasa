@@ -8,9 +8,11 @@
     'author': "Aquih",
     'website': "http://www.aquih.com",
     'category': 'Uncategorized',
-    'version': '1.0',
-    'depends': ['account'],
+    'version': '1.1',
+    'depends': ['account', 'account_asset', 'hr'],
     'data': [
+        'views/account_asset_views.xml',
+        'views/res_company_views.xml',
         'views/report_payment1.xml',
         'views/reports.xml',
     ],
