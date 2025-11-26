@@ -21,7 +21,7 @@ class AsistenteDiferencialCambiario(models.TransientModel):
                         diferencial = valor_fecha_pago - valor_fecha_factura
 
                         asiento = self.env['account.move'].with_company(self.company_id).create({
-                            'ref': 'Diferencial cambiaro entre compañías Texpasa',
+                            'ref': pago.name,
                             'journal_id': self.company_id.currency_exchange_journal_id.id,
                             'company_id': self.company_id.id,
                             'date': pago.date
