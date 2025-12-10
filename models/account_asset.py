@@ -7,7 +7,7 @@ import logging
 class AccountAsset(models.Model):
     _inherit = "account.asset"
 
-    compania_relacionada_id = fields.Many2one('res.company', string='Compañía fiscal relacionada', index=True, ondelete='restrict')
+    compania_relacionada_id = fields.Many2one('res.company', string='Compañía Fiscal Relacionada', index=True, ondelete='restrict')
     codigo = fields.Char(string="Código")
     numero_serie = fields.Char(string="Número de serie")
     departamento_id = fields.Many2one('hr.department', string='Departamento')

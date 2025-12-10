@@ -5,18 +5,16 @@
     'description': """
         Funcionalidades extras para Texpasa
     """,
-    'author': "Aquih",
+    'author': "aquíH",
     'website': "http://www.aquih.com",
     'category': 'Uncategorized',
-    'version': '1.4',
+    'version': '1.5',
     'depends': ['account', 'account_asset', 'hr'],
     'data': [
-        'wizard/asistente_diferencial_cambiario_views.xml',
         'views/account_views.xml',
         'views/account_asset_views.xml',
         'views/report_payment1.xml',
         'views/reports.xml',
-        'security/ir.model.access.csv',
     ],
     'license': 'Other OSI approved licence',
 }
