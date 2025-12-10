@@ -8,7 +8,7 @@
     'author': "aquíH",
     'website': "http://www.aquih.com",
     'category': 'Uncategorized',
-    'version': '1.5',
+    'version': '1.6',
     'depends': ['account', 'account_asset', 'hr'],
     'data': [
         'views/account_views.xml',

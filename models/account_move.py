@@ -39,4 +39,6 @@ class AccountMove(models.Model):
                             'account_id': factura.journal_id.compania_relacionada_id.income_currency_exchange_account_id.id,
                             'debit': abs(diferencial) if diferencial < 0 else 0,
                             'credit': abs(diferencial) if diferencial > 0 else 0,
-                        })]    
+                        })]
+
+                        asiento._post()
